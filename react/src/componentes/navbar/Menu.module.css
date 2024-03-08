@@ -1,0 +1,133 @@
+/* Estilos para la barra de navegación */
+.header {
+    z-index: 9;
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    align-items: center;
+    margin: auto;
+    background-color: #1b191e;
+    position: fixed;
+}
+
+.logo {
+    font-family: 'Righteus';
+    font-size: 35px;
+    font-weight: 700;
+    color: aliceblue;
+    text-decoration: none;
+    width: 100%;
+    height: 60%;
+    margin-left: 50px;
+}
+
+
+
+.header ul {
+    display: flex;
+    list-style: none;
+}
+
+.link {
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: aqua;
+}
+
+.navresponsive {
+    background-color: #1cb698;
+    color: #fff;
+    padding:  5px 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    padding: 3px;
+    transition: .5s;
+}
+
+.nav a:hover {
+    color: aqua;
+}
+
+
+
+.logo a:hover {
+    color: aqua;
+}
+
+/* Estilos para la barra de navegación móvil */
+@media screen and (max-width: 980px) {
+    .nav {
+        display: none;
+        /* Oculta la barra de navegación normal */
+    }
+
+    .navresponsive {
+        display: block;
+    }
+
+    .navresponsive {
+        display: flex;
+        /* Muestra la barra de navegación móvil */
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+        color: aliceblue;
+    }
+
+    .navresponsive a {
+        font-size: 1.3rem;
+        text-decoration: none;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.982);
+        margin: 0 10px;
+        padding: 3px;
+        transition: .5s;
+    }
+
+    .navmobile a:hover {
+        color: aqua;
+
+    }
+
+    .nav {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 180px;
+    }
+
+    .nav {
+        display: block !important;
+    }
+
+    .nav{
+        border-bottom: 1px solid #fff;
+    }
+}

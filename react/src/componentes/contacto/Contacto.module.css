@@ -1,0 +1,107 @@
+.container {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.right {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.container h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.fila {
+    display: flex;
+}
+
+.col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.col input,
+.col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #e2e2e2;
+    color: #000000;
+    font-size: 18px;
+}
+
+.container button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.container button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.container button:hover .overlay {
+    width: 100%;
+}
+
+.container img {
+    width: 100%;
+
+}
+
+.col .info {
+    position: absolute;
+    top: 40%;
+    background-color: #252a2e;
+    padding: 20px;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col .info ul {
+    list-style: none;
+}
+
+.col .info ul li {
+    margin-bottom: 20px;
+}
+
+.col .info ul li .icon {
+    color: #1cb698;
+    /* Cambia el color según tu preferencia */
+    margin-right: 10px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+   .fila{
+    display: block;
+   }
+   .col{
+    width: 100%;
+   }
+}

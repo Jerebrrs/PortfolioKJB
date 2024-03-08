@@ -1,0 +1,291 @@
+.container {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.right {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.container h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.fila {
+    display: flex;
+
+}
+
+.columna {
+    width: 100%; /* Modificado */
+    padding: 0 20px;
+    margin-bottom: 20px; 
+}
+.columna h3 {
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 25px;
+}
+
+/* .skills span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+} */
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    width: 110px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #24303c;
+    box-shadow: 0 4px 6px rgba(167, 155, 155, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Agregar box-shadow a la transición */
+    box-shadow: 1px 5px 7px rgba(250, 250, 250, 0.418);
+
+}
+.skill:hover{
+    background-color: #fff;
+    box-shadow: 3px 3px 33px 10px rgb(0, 8, 3);
+    color: black;
+}
+.skill > svg {
+    font-size: 36px;
+    margin-bottom: 10px;
+    display: block;
+}
+.barraskill {
+    height: 8px;
+    width: 100%; /* Modificado */
+    max-width: 80%; /* Agregado */
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.progreso {
+    background-color: #1Cb698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.progreso span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1cb698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.barraskill .progreso.javascript {
+    width: 0%;
+    animation: javascript 2s forwards;
+
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.barraskill .progreso.html {
+    width: 0%;
+    animation: html 2s forwards;
+
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 78%;
+    }
+}
+.barraskill .progreso.java {
+    width: 0%;
+    animation: java 2s forwards;
+
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+.barraskill .progreso.react {
+    width: 0%;
+    animation: react 2s forwards;
+
+}
+
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+.barraskill .progreso.redux {
+    width: 0%;
+    animation: redux 2s forwards;
+
+}
+
+@keyframes redux {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+.barraskill .progreso.sql {
+    width: 0%;
+    animation: sql 2s forwards;
+
+}
+
+@keyframes sql {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+.barraskill .progreso.node {
+    width: 0%;
+    animation: node 2s forwards;
+
+}
+
+@keyframes node {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 71%;
+    }
+}
+.barraskill .progreso.comunicacion {
+    width: 0%;
+    animation: comunicacion 2s forwards;
+
+}
+
+@keyframes comunicacion {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 91%;
+    }
+}
+.barraskill .progreso.trabajo {
+    width: 0%;
+    animation: trabajo 2s forwards;
+
+}
+
+@keyframes trabajo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 88%;
+    }
+}
+.barraskill .progreso.creatividad {
+    width: 0%;
+    animation: creatividad 2s forwards;
+
+}
+
+@keyframes creatividad {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 88%;
+    }
+}
+.barraskill .progreso.dedicacion {
+    width: 0%;
+    animation: dedicacion 2s forwards;
+
+}
+
+@keyframes dedicacion {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 99%;
+    }
+}
+.barraskill .progreso.proyectos {
+    width: 0%;
+    animation: proyectos 2s forwards;
+
+}
+
+@keyframes proyectos {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 87%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .columna {
+        width: 100%; /* Modificado */
+    }
+
+    .barraskill {
+        max-width: 100%; /* Modificado */
+    }
+}
