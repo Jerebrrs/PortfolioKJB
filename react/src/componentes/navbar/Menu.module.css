@@ -133,6 +133,9 @@
 } */
 
 @media screen and (max-width: 980px) {
+    .header{
+        display: flexbox;
+    }
     .nav {
         display: none;
     }
