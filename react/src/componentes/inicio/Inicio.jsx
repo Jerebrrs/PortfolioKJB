@@ -50,7 +50,7 @@ const Inicio = () => {
                         </div>
                     </div>
                     <div  className={stylos.nombreTitulo}>
-                        <h1>{nombre}</h1>
+                        <h1>{nombre} </h1>
                         <h2>Full Stack Web Developer</h2>
                     </div>
                 </div>

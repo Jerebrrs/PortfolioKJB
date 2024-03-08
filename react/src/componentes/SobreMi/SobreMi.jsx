@@ -32,10 +32,6 @@ function SobreMi() {
                 kevinjeremiasbarrios@gmail.com
               </li>
               <li>
-                <strong>Website: </strong>
-                www.EjemploMiWEB.com.ar
-              </li>
-              <li>
                 <strong>Direccion: </strong>
                 Paraná, Entre Rios, Argentina.
               </li>

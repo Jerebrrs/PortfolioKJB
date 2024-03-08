@@ -97,7 +97,7 @@ function Proyectos() {
                                     <FontAwesomeIcon className={stylos.skills} icon={faDeploydog} />
                                 </a>
                                 <p>Repositorio:</p>
-                                <a href='https://github.com/Jerebrrs/Portfilio' target="_blank" rel="noopener noreferrer">
+                                <a href='https://github.com/Jerebrrs/PortfolioKJB' target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon className={stylos.skills} icon={faGithub} />
                                 </a>
 
