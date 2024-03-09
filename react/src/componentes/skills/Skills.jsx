@@ -2,7 +2,7 @@ import React from 'react'
 import stylos from './Skills.module.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCss3, faGithub, faHtml5, faJs, faNode, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap, faCss3, faGithub, faHtml5, faJs, faNode, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 function Skills() {
@@ -40,6 +40,14 @@ function Skills() {
                         <div className={stylos.skill}>
                             <FontAwesomeIcon icon={faDatabase} />
                             <span>SQL</span>
+                        </div>
+                        <div className={stylos.skill}>
+                            <FontAwesomeIcon icon={faGithub} />
+                            <span>Git/GitHub</span>
+                        </div>
+                        <div className={stylos.skill}>
+                            <FontAwesomeIcon icon={faBootstrap} />
+                            <span>Bootstrap</span>
                         </div>
                     </div>
 

@@ -45,7 +45,7 @@ function Navbar() {
     return (
         <header className={stylos.header}>
             <div className={stylos.logo}>
-                <a>KJB</a>
+                <a >KJB</a>
             </div>
 
             <nav className={`${stylos.nav} ${showNav ? stylos.showNav : ''}`}>

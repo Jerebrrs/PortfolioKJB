@@ -45,7 +45,7 @@
 .navresponsive {
     background-color: #1cb698;
     color: #fff;
-    padding:  5px 10px ;
+    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
@@ -133,12 +133,19 @@
 } */
 
 @media screen and (max-width: 980px) {
-    .header{
+    .header {
         display: flexbox;
     }
+
     .nav {
-        display: none;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75%;
+        width: 180px;
     }
+
+
 
     .responsive {
         display: flex;

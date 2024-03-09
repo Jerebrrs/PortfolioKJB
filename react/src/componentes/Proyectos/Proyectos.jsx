@@ -14,7 +14,7 @@ function Proyectos() {
         <div className={stylos.container}>
             <div className={stylos.right} >
                 <div>
-                    <h2>Portfolio</h2>
+                    <h2>Proyectos</h2>
                     <div className={stylos.galeria}>
                         <div>
                             <div className={stylos.proyecto}>
@@ -93,7 +93,7 @@ function Proyectos() {
                             </a>
                             <div className={stylos.skillsContainer}>
                                 <p>Deploy:</p>
-                                <a href='https://pi-pokemons-9uc7.vercel.app/' target="_blank" rel="noopener noreferrer">
+                                <a href='https://portfoliokjb.vercel.app/' target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon className={stylos.skills} icon={faDeploydog} />
                                 </a>
                                 <p>Repositorio:</p>
