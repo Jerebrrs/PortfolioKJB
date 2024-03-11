@@ -39,6 +39,10 @@ function SobreMi() {
                 <strong>Cargo: </strong>
                 <span>Freelancer</span>
               </li>
+              <li>
+                <strong>Nivel de Inglés: </strong>
+                <span>A1 - Actualmente en Capasitación</span>
+              </li>
             </ul>
           </div>
 
