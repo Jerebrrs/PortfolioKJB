@@ -59,7 +59,7 @@ const Inicio = () => {
             <Skills />
             <Proyectos />
             <Curriculum />
-            {/* <Contacto /> */}
+            <Contacto />
             <Footer />
         </section>
     )

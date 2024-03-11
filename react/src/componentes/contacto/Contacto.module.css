@@ -1,5 +1,5 @@
 .container {
-    background-color: #1e2326;
+    background: linear-gradient(to top, #0d1214, #000000);
     color: #fff;
     padding: 50px 20px;
 }
@@ -24,8 +24,40 @@
     width: 50%;
     padding: 10px;
     position: relative;
+    display: flex; /* Agrega display flex para alinear elementos en la columna */
+    align-items: center;
+}
+.col form {
+    width: 95%; /* Expande el formulario por toda la columna */
 }
 
+.col form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.col form input,
+.col form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.col form input[type="submit"] {
+    background-color: #1cb698;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.col form input[type="submit"]:hover {
+    background-color: #1a996b;
+}
 .col input,
 .col textarea {
     display: block;

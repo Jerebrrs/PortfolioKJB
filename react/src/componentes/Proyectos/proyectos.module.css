@@ -24,7 +24,7 @@
 
 /* ///////////////////// */
 .container {
-    background-color: #252525;
+    background: linear-gradient(to top, #111619, #000000);
     color: #fff;
     padding: 50px 20px;
 }

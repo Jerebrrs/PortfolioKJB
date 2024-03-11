@@ -1,5 +1,5 @@
 .container {
-    background-color: #1e2326;
+    background: linear-gradient(to top, #0e1214, #000000);
     color: #fff;
     padding: 50px 20px;
 }
