@@ -22,33 +22,9 @@
     margin-left: 50px;
 }
 
-
-
 .header ul {
     display: flex;
     list-style: none;
-}
-
-.link {
-    text-align: none;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
-}
-
-.link:hover {
-    color: aqua;
-}
-
-.navresponsive {
-    background-color: #1cb698;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
 }
 
 .nav {
@@ -79,72 +55,26 @@
     color: aqua;
 }
 
-/* Estilos para la barra de navegación móvil */
-/* @media screen and (max-width: 980px) {
-    .nav {
-        display: none;
-       
-    }
-
-    .navresponsive {
-        display: block;
-    }
-
-    .navresponsive {
-        display: flex;
-        
-        justify-content: flex-end;
-        align-items: center;
-        gap: 30px;
-        color: aliceblue;
-    }
-
-    .navresponsive a {
-        font-size: 1.3rem;
-        text-decoration: none;
-        font-weight: 600;
-        color: rgba(255, 255, 255, 0.982);
-        margin: 0 10px;
-        padding: 3px;
-        transition: .5s;
-    }
-
-    .navmobile a:hover {
-        color: aqua;
-
-    }
-
-    .nav {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 75px;
-        background-color: #252a2e;
-        width: 180px;
-    }
-
-    .nav {
-        display: block !important;
-    }
-
-    .nav{
-        border-bottom: 1px solid #fff;
-    }
-} */
-
 @media screen and (max-width: 980px) {
     .header {
         display: flexbox;
     }
 
-    .nav {
+    /* .nav {
         display: block;
         position: absolute;
         right: 0;
         top: 75%;
         width: 180px;
+    } */
+    .nav {
+        flex-direction: column;
+        position: static;
+        background-color: #0b0a0c;
+        width: 100%;
+        text-align: left;
+        transform: translateY(0%);
     }
-
 
 
     .responsive {

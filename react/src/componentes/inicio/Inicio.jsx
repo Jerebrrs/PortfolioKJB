@@ -56,8 +56,8 @@ const Inicio = () => {
                 </div>
             </div>
             <SobreMi />
-            <Skills />
             <Proyectos />
+            <Skills />
             <Curriculum />
             <Contacto />
             <Footer />

@@ -130,3 +130,23 @@
     margin-right: auto;
 
 } 
+
+
+
+
+@media screen and (max-width: 980px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fotoPersonal {
+        width: 40%; /* Ajusta el ancho para que se adapte mejor en dispositivos móviles */
+        margin-bottom: 20px; /* Agrega un margen inferior para separar del siguiente elemento */
+    }
+
+    .nombreTitulo {
+        margin: 0; /* Reinicia todos los márgenes para centrarlo en dispositivos móviles */
+    }
+}

@@ -50,14 +50,10 @@ function Skills() {
                             <span>Bootstrap</span>
                         </div>
                     </div>
-
-
-
                 </div>
                 <div className={stylos.fila}>
-
                     <div className={stylos.columna}>
-                        <h3>Profedional Skills</h3>
+                        <h3>Profesional Skills</h3>
                         <div className={stylos.skills}>
                             <span>Comunicacion</span>
                             <div className={stylos.barraskill}>

@@ -34,7 +34,7 @@ function Curriculum() {
                                 <div className={stylos.circuloi}></div>
                             </div>
                         </div>
-                        <div className={`${stylos.items} ${stylos.saraza}`}>
+                        {/* <div className={`${stylos.items} ${stylos.saraza}`}>
                             <h4>Bachiller en Economía y Administración</h4>
                             <span className={stylos.casa}>Colegio Domingo Faustino Sarmiento</span>
                             <span className={stylos.fecha}>2009-2015</span>
@@ -44,7 +44,7 @@ function Curriculum() {
                             <div className={stylos.conectori}>
                                 <div className={stylos.circuloi}></div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className={stylos.colDerecha}>
                         <h3>Experiencia de Trabajo</h3>

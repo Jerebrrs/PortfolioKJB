@@ -2,7 +2,7 @@ import React from 'react'
 import stylos from './sobreMi.module.css';
 import cv from '../../assets/c.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faFile } from '@fortawesome/free-solid-svg-icons';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
 function SobreMi() {
   return (
     <div className={stylos.container}>
@@ -36,12 +36,8 @@ function SobreMi() {
                 Paraná, Entre Rios, Argentina.
               </li>
               <li>
-                <strong>Cargo: </strong>
-                <span>Freelancer</span>
-              </li>
-              <li>
                 <strong>Nivel de Inglés: </strong>
-                <span>A1 - Actualmente en Capasitación</span>
+                A1 -En proceso de Capacitación
               </li>
             </ul>
           </div>
@@ -49,7 +45,7 @@ function SobreMi() {
           <div>
             <button className={stylos.button}>
               <a href={cv} download >Descargar CV <FontAwesomeIcon icon={faFile} /></a>
-                <span></span>
+              <span></span>
             </button>
 
           </div>
@@ -57,7 +53,7 @@ function SobreMi() {
       </div>
       <div></div>
     </div>
-   
+
   )
 }
 
