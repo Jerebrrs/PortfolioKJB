@@ -1,11 +1,11 @@
-/* * {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
- */
- @media screen and(max-width:980px) {
-  Navbar.module.css {
-    display: none;
-  }
+} 
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
 }
