@@ -9,12 +9,12 @@ function Footer() {
     const handleScrollToTop = () => {
         window.scrollTo({
             top: 0,
-            behavior: "smooth" // Desplazamiento suave
+            behavior: "smooth" 
         });
     };
     return (
         <footer >
-            <a href='#' className={stylos.arriba} onClick={handleScrollToTop}>
+            <a href='/' className={stylos.arriba} onClick={handleScrollToTop}>
                 <FontAwesomeIcon className={stylos.icon} icon={faAnglesUp} />
             </a>
             <div className={stylos.redes}>

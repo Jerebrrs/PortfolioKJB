@@ -19,7 +19,7 @@ const Inicio = () => {
     const [nombre, setNombre] = useState('');
 
     useEffect(() => {
-        const nombreCompleto = 'Hola, soy Kevin Jeremias';
+        const nombreCompleto = 'Hi , I am Kevin Jeremias';
         let currentLength = 0;
 
         const interval = setInterval(() => {
@@ -29,7 +29,7 @@ const Inicio = () => {
             } else {
                 clearInterval(interval);
             }
-        }, 70); // Velocidad de escritura en milisegundos
+        }, 70); 
 
         return () => clearInterval(interval);
     }, []);

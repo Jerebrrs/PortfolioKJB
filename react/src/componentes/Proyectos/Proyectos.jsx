@@ -2,7 +2,7 @@
 import React from 'react'
 import stylos from '../Proyectos/proyectos.module.css'
 import piPoke from '../Imagenes/image.png'
-import portofolio from '../Imagenes/portfolio.png'
+import portofolio from '../Imagenes/portfolioactual.png'
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,18 +14,24 @@ function Proyectos() {
         <div className={stylos.container}>
             <div className={stylos.right} >
                 <div>
-                    <h2>Proyectos</h2>
+                    <h2>Projects</h2>
                     <div className={stylos.galeria}>
                         <div>
-                            <div className={stylos.proyecto}>
-                                <div>
-                                    <img src={piPoke} alt='piPoke' />
-                                    <div className={stylos.overlay}>
-                                        <h3>Pokemons</h3>
-                                        <p>Proyecto Academico</p>
+                            <div className={stylos.card}>
+                                <div className={stylos.cardinner}>
+                                    <div className={stylos.cardFront}>
+                                        <img src={piPoke} alt='piPoke' />
+                                        <p>Proyecto Academico Pokemon</p>
+                                    </div>
+                                    <div className={stylos.cardBack}>
+                                        <p>The project revolves around the world of Pokémon.
+                                            In it, you will find detailed information about different Pokémon, including their characteristics and abilities.
+                                            Best of all, you can also create your own Pokémon!
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+
                             <a className={stylos.skillsContainer}>
                                 <span>Skills:</span>
                                 <div className={stylos.skills}>
@@ -63,13 +69,16 @@ function Proyectos() {
                             </div>
                         </div>
                         <div>
-
-                            <div className={stylos.proyecto}>
-                                <div>
-                                    <img src={portofolio} alt='portofolio' />
-                                    <div className={stylos.overlay}>
-                                        <h3>Portfolio</h3>
-                                        <p>CV, Contacto,Sobre MI, Skills</p>
+                            <div className={stylos.card}>
+                                <div className={stylos.cardinner}>
+                                    <div className={stylos.cardFront}>
+                                        <img src={portofolio} alt='portofolio' />
+                                        <p>Portfolio</p>
+                                    </div>
+                                    <div className={stylos.cardBack}>
+                                        <p>My personal portfolio where you find a window of who I am as a professional and works carried out.
+                                            You will find an About Me, Skills, Projects and Contacts section
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +111,6 @@ function Proyectos() {
                                 </a>
 
                             </div>
-
                         </div>
                     </div>
                 </div>

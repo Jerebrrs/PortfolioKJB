@@ -1,4 +1,3 @@
-/* Estilos para la barra de navegación */
 .header {
     z-index: 9;
     width: 100%;
@@ -8,7 +7,7 @@
     align-items: center;
     margin: auto;
     background-color: #000000;
-    
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -20,6 +19,14 @@
     width: 100%;
     height: 60%;
     margin-left: 50px;
+}
+
+.imgLogo {
+    display: flexbox;
+    width: 60px;
+    transition: 1s;
+    filter: drop-shadow(4px 4px 4px #bcbdc0);
+    color: #000000;
 }
 
 .header ul {
@@ -36,55 +43,52 @@
 }
 
 .nav a {
-    font-size: 1.3rem;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
     text-decoration: none;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    margin: 0 10px;
-    padding: 3px;
-    transition: .5s;
 }
 
-.nav a:hover {
-    color: aqua;
+.nav a::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fdfdfd;
+    transition: width 0.6s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
 
-
-
-.logo a:hover {
-    color: aqua;
+.nav a:hover::after {
+    width: 100%;
+    left: 0;
+    background-color: rgb(148, 148, 155);
 }
+
 
 @media screen and (max-width: 980px) {
     .header {
-        display: flexbox;
+        display: block;
     }
 
-    /* .nav {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 75%;
-        width: 180px;
-    } */
+    .logo {
+        flex-wrap: wrap;
+        display: grid;
+    }
+
     .nav {
-        flex-direction: column;
+        flex-direction: row;
         position: static;
-        background-color: #0b0a0c;
+        background-color: #7446a1;
         width: 100%;
         text-align: left;
         transform: translateY(0%);
     }
 
-
-    .responsive {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 30px;
-        color: aliceblue;
-        cursor: pointer;
-    }
 
     .nav ul {
         display: flex;
@@ -100,16 +104,13 @@
         list-style: none;
     }
 
-    .nav ul li {
-        border-bottom: 1px solid #fff;
-    }
 
     .nav ul li:last-child {
         border-bottom: none;
     }
 
     .nav ul li a {
-        color: rgba(255, 255, 255, 0.982);
+
         font-size: 1.3rem;
         text-decoration: none;
         font-weight: 600;
