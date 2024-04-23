@@ -38,8 +38,8 @@ footer .arriba {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1cb698;
-    color: #fff;
+    background-color: #b5cac6;
+    color: #000000;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -53,11 +53,21 @@ footer .arriba {
     cursor: pointer;
     /* Cambiado */
     transition: background-color 0.3s;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        
+        inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    --glow-color: rgb(92, 87, 122);
+    --glow-spread-color: rgba(44, 41, 85, 0.973);
+    --enhanced-glow-color: rgb(188, 188, 201);
+    --btn-color: rgb(255, 255, 255);
     /* Agregado */
 }
 
 footer .arriba:hover {
-    background-color: #d6e4e1;
-    /* Cambiado */
-    color: black;
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+       
+        inset 0 0 .75em .25em var(--glow-color);
 }

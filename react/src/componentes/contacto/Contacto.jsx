@@ -78,11 +78,11 @@ function Contacto() {
                             <ul>
                                 <li>
                                     <FontAwesomeIcon className={stylos.icon} icon={faLocationDot} />
-                                    Ubicación: Paraná, Entre Rios, Argentina.
+                                    Location: Paraná, Entre Rios, Argentina.
                                 </li>
                                 <li>
                                     <FontAwesomeIcon className={stylos.icon} icon={faMobileScreen} />
-                                    Telefono: 3435 330498
+                                    Phone: 3435 330498
                                 </li>
                                 <li>
                                     <FontAwesomeIcon className={stylos.icon} icon={faEnvelope} />
