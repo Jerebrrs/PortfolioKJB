@@ -1,12 +1,14 @@
 .container {
-    background: linear-gradient(to top, #0f1416, #000000);
+    background: linear-gradient(to top, #000000, #000000);
     color: #fff;
     padding: 50px 20px;
+    flex-wrap: wrap;
 }
 
 .right {
     max-width: 1100px;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .container h2 {
@@ -22,10 +24,12 @@
 }
 
 .columna {
-    width: 100%; /* Modificado */
+    width: 100%;
+    /* Modificado */
     padding: 0 20px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
+
 .columna h3 {
     font-size: 28px;
     font-family: 'Times New Roman', Times, serif;
@@ -42,7 +46,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    img {
+        width: 45px;
+        filter: drop-shadow(0px 0px 1px #fff);
+        transition: all 2s;
+    }
 }
+
 
 .skill {
     width: 110px;
@@ -52,25 +63,39 @@
     border-radius: 10px;
     background-color: #0c1218;
     box-shadow: 0 4px 6px rgba(167, 155, 155, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    /* Agregar box-shadow a la transición */
-    box-shadow: 1px 5px 7px rgba(250, 250, 250, 0.418);
+    transition: background-color 1s ease, box-shadow 0.3s ease;
+    box-shadow: 1px 2px 7px rgba(250, 250, 250, 0.418);
 
+    svg {
+        width: 40px;
+        color: #ffffff;
+    }
 }
-.skill:hover{
+
+.skill:hover {
     background-color: #fff;
     box-shadow: 3px 3px 33px 10px rgb(0, 8, 3);
-    color: black;
+    color: rgb(0, 0, 0);
+    transition: all 1.5s;
+
+    svg {
+        width: 40px;
+        color: #000000;
+    }
 }
-.skill > svg {
+
+.skill svg {
     font-size: 36px;
     margin-bottom: 10px;
     display: block;
 }
+
 .barraskill {
     height: 8px;
-    width: 100%; /* Modificado */
-    max-width: 80%; /* Agregado */
+    width: 100%;
+    /* Modificado */
+    max-width: 80%;
+    /* Agregado */
     background-color: #131517;
     position: relative;
     margin-bottom: 30px;
@@ -129,6 +154,7 @@
         width: 78%;
     }
 }
+
 .barraskill .progreso.java {
     width: 0%;
     animation: java 2s forwards;
@@ -144,6 +170,7 @@
         width: 70%;
     }
 }
+
 .barraskill .progreso.react {
     width: 0%;
     animation: react 2s forwards;
@@ -159,6 +186,7 @@
         width: 70%;
     }
 }
+
 .barraskill .progreso.redux {
     width: 0%;
     animation: redux 2s forwards;
@@ -174,6 +202,7 @@
         width: 70%;
     }
 }
+
 .barraskill .progreso.sql {
     width: 0%;
     animation: sql 2s forwards;
@@ -189,6 +218,7 @@
         width: 70%;
     }
 }
+
 .barraskill .progreso.node {
     width: 0%;
     animation: node 2s forwards;
@@ -204,6 +234,7 @@
         width: 71%;
     }
 }
+
 .barraskill .progreso.comunicacion {
     width: 0%;
     animation: comunicacion 2s forwards;
@@ -216,9 +247,10 @@
     }
 
     100% {
-        width: 91%;
+        width: 95%;
     }
 }
+
 .barraskill .progreso.trabajo {
     width: 0%;
     animation: trabajo 2s forwards;
@@ -231,9 +263,10 @@
     }
 
     100% {
-        width: 88%;
+        width: 95%;
     }
 }
+
 .barraskill .progreso.creatividad {
     width: 0%;
     animation: creatividad 2s forwards;
@@ -246,9 +279,10 @@
     }
 
     100% {
-        width: 88%;
+        width: 95%;
     }
 }
+
 .barraskill .progreso.dedicacion {
     width: 0%;
     animation: dedicacion 2s forwards;
@@ -264,6 +298,7 @@
         width: 99%;
     }
 }
+
 .barraskill .progreso.proyectos {
     width: 0%;
     animation: proyectos 2s forwards;
@@ -276,16 +311,18 @@
     }
 
     100% {
-        width: 87%;
+        width: 95%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .columna {
-        width: 100%; /* Modificado */
+        width: 100%;
+        /* Modificado */
     }
 
     .barraskill {
-        max-width: 100%; /* Modificado */
+        max-width: 100%;
+        /* Modificado */
     }
 }

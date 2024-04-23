@@ -39,18 +39,23 @@
 
  .fotoPersonal img {
      margin-top: 40px;
-     border: 7px solid #ffffff;
+     border: 2px solid #ffffff;
      width: 80%;
      border-radius: 100%;
  }
 
  .inicioNuevo h1 {
      margin-top: 9px;
-     font-size: 60px;
+     font-size: clamp(12px, 4vw, 32px);
      font-family: 'Righteous';
      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
-     box-shadow: 1px 1px 1px rgb(252, 253, 255);
+    
+     filter: drop-shadow( 0px 0px 0px #fff);
+     img {
+         width: 37px;        
+         transition: all 5s;
+         /* filter: drop-shadow(8px 8px 4px #fff); */
+     }
  }
 
  .inicioNuevo h1::after {
@@ -104,15 +109,14 @@
      display: inline-block;
      text-decoration: none;
      border: 1px solid #fff;
-     border-radius: 100%;
+     border-radius: 50%;
      width: 42px;
      height: 42px;
      line-height: 42px;
      margin: 40px 5px;
      font-size: 20px;
      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
-     box-shadow: 1px 2px 2px rgba(250, 250, 250, 0.418);
+     box-shadow: 1px 1px 1px rgba(71, 2, 2, 0.979);
  }
 
  .redes img {
@@ -124,6 +128,8 @@
      background-color: #fff;
      box-shadow: 3px 3px 33px 10px rgb(0, 8, 3);
      color: black;
+     border-radius: 1000%;
+     transition: all 1.5s;
  }
 
  .nombreTitulo {

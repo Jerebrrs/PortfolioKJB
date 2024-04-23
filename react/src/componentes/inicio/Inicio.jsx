@@ -11,6 +11,8 @@ import Footer from '../footer/Footer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Legado from '../legado/Legado';
+
 
 
 
@@ -29,7 +31,7 @@ const Inicio = () => {
             } else {
                 clearInterval(interval);
             }
-        }, 70); 
+        }, 70);
 
         return () => clearInterval(interval);
     }, []);
@@ -49,8 +51,8 @@ const Inicio = () => {
                             </a>
                         </div>
                     </div>
-                    <div  className={stylos.nombreTitulo}>
-                        <h1>{nombre} </h1>
+                    <div className={stylos.nombreTitulo}>
+                        <h1>{nombre}<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" /> </h1>
                         <h2>Full Stack Web Developer</h2>
                     </div>
                 </div>
@@ -58,7 +60,7 @@ const Inicio = () => {
             <SobreMi />
             <Proyectos />
             <Skills />
-            <Curriculum />
+            <Legado />
             <Contacto />
             <Footer />
         </section>
