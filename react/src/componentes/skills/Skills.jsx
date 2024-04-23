@@ -59,7 +59,7 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div className={stylos.fila}>
+                {/* <div className={stylos.fila}>
                     <div className={stylos.columna}>
                         <h3>Profesional Skills</h3>
                         <div className={stylos.skills}>
@@ -104,7 +104,7 @@ function Skills() {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

@@ -41,9 +41,7 @@ function SobreMi() {
           </div>
 
           <div>
-            <button className={stylos.button}>
-              <a href={cv} download >Download CV <FontAwesomeIcon icon={faFile} /></a>
-              <span></span>
+            <button className={stylos.button}>  <a href={cv} download >Download CV <FontAwesomeIcon icon={faFile} /></a>
             </button>
 
           </div>
