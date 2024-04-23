@@ -1,13 +1,24 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import stylos from './Contacto.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faLocationDot, faMobileScreen, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import ubicacion from '../Imagenes/ubicacion.png'
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
+
+
 
 import emailjs from '@emailjs/browser';
 function Contacto() {
-
+    const [snackbarMessage, setSnackbarMessage] = useState('');
+    const [snackbarSeverity, setSnackbarSeverity] = useState('success');
+    const [snackbarOpen, setSnackbarOpen] = useState(false);
     const form = useRef();
+    const [formCompleted, setFormCompleted] = useState(false);
+
+    const handleCloseSnackbar = () => {
+        setSnackbarOpen(false);
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -18,30 +29,45 @@ function Contacto() {
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    setSnackbarSeverity('success');
+                    setSnackbarMessage('Email sent successfully!');
+                    setSnackbarOpen(true);
+                    form.current.reset();
+                    setFormCompleted(false);
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
-                },
+                    setSnackbarSeverity('error');
+                    setSnackbarMessage(`Failed to send email: ${error.text}`);
+                    setSnackbarOpen(true);
+                }
             );
     };
-
+    const handleInputChange = () => {
+        const inputs = form.current.querySelectorAll('input, textarea');
+        let isCompleted = true;
+        inputs.forEach((input) => {
+            if (!input.value) {
+                isCompleted = false;
+            }
+        });
+        setFormCompleted(isCompleted);
+    };
 
     return (
         <div className={stylos.container}>
             <div className={stylos.right}>
                 <h2>Contacto</h2>
                 <div className={stylos.fila}>
-                    {/* Formulario */}
+
                     <div className={stylos.col}>
-                        <form ref={form} onSubmit={sendEmail}>
+                        <form ref={form} onSubmit={sendEmail} onChange={handleInputChange}>
                             <label>Name</label>
                             <input type="text" name="user_name" />
                             <label>Email</label>
                             <input type="email" name="user_email" />
                             <label>Message</label>
                             <textarea name="message" />
-                            <input type="submit" value="Send" />
+                            <input type="submit" value="Send" disabled={!formCompleted} />
                         </form>
                     </div>
 
@@ -68,6 +94,11 @@ function Contacto() {
                 </div>
 
             </div>
+            <Snackbar open={snackbarOpen} autoHideDuration={6000} onClose={handleCloseSnackbar}>
+                <MuiAlert elevation={6} variant="filled" onClose={handleCloseSnackbar} severity={snackbarSeverity}>
+                    {snackbarMessage}
+                </MuiAlert>
+            </Snackbar>
         </div>
     )
 }

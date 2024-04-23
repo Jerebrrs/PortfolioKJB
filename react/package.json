@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@mui/material": "^5.15.15",
     "@splinetool/runtime": "^1.0.63",
     "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
