@@ -11,7 +11,7 @@ function Skills() {
             <div className={stylos.right}>
                 <h2>Skills</h2>
                 <div>
-                    <h3>Technicaal Skills</h3>
+                    <h3>Technical Skills</h3>
                     <div className={stylos.skillsContainer}>
                         <div className={stylos.skill}>
                             <FontAwesomeIcon icon={faCode} />
