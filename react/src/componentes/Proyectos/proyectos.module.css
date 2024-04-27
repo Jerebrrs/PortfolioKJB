@@ -313,18 +313,63 @@
 .card:hover .contentpika {
     transform: translateY(0);
 }
-
+@media screen and (max-width: 992px) {
+    .container {
+      margin-left: var(--mb-1-5);
+      margin-right: var(--mb-1-5);
+    }
+  
+    .button {
+      padding: 1rem 1.75rem;
+    }
+  
+    .button__icon {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .container {
+        padding: 30px 10px; /* Ajustar el padding para dispositivos medianos */
+    }
+  
+    .cardcontainer {
+        width: 100%; /* Ajustar el ancho de las cards al 100% para dispositivos medianos */
+    }
+  
+    .card .frontcontent p {
+        font-size: 24px; /* Ajustar el tamaño de fuente del texto en las cards */
+    }
+}
+  
+/* For medium devices */
 @media screen and (max-width: 768px) {
-    .galeria {
-        display: block;
-        width: 100%;
+    .container {
+        padding: 20px 10px; /* Ajustar el padding para dispositivos pequeños */
     }
-
-    .proyecto {
-        max-width: 100%;
+  
+    .cardcontainer {
+        width: 100%; /* Ajustar el ancho de las cards al 100% para dispositivos pequeños */
     }
-
-    .proyecto img {
-        width: 100%;
+  
+    .card .frontcontent p {
+        font-size: 20px; /* Ajustar el tamaño de fuente del texto en las cards */
+    }
+}
+  
+@media screen and (max-width: 576px) {
+    .cardcontainer {
+        width: 100%; /* Ajustar el ancho de las cards al 100% para dispositivos extra pequeños */
+    }
+  
+    .card .frontcontent p {
+        font-size: 18px; /* Ajustar el tamaño de fuente del texto en las cards */
+    }
+}
+  
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .card .frontcontent p {
+        font-size: 16px; /* Ajustar el tamaño de fuente del texto en las cards */
     }
 }
