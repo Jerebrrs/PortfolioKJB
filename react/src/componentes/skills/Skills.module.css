@@ -73,14 +73,21 @@
 }
 
 .skill:hover {
-    background-color: #fff;
-    box-shadow: 3px 3px 33px 10px rgb(0, 8, 3);
-    color: rgb(0, 0, 0);
+    background-color: #140920;
+    box-shadow: 3px 3px 33px 1px rgb(6, 114, 117);
+    color: rgb(255, 255, 255);
     transition: all 1.5s;
 
     svg {
         width: 40px;
-        color: #000000;
+        color: #f0eeee;
+        filter: drop-shadow(3px 3px 13px rgba(255, 255, 255, 0.5));
+    }
+
+    img {
+        width: 40px;
+        color: #f0eeee;
+        filter: drop-shadow(3px 3px 13px rgba(255, 255, 255, 0.5));
     }
 }
 
