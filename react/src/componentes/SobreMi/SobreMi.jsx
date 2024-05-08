@@ -7,22 +7,22 @@ function SobreMi() {
   return (
     <div className={stylos.container}>
       <div className={stylos.right}>
-        <h2>About Me</h2>
-        <p>I am <span>Full Stack </span>with a main focus oriented to the Back-end 👨‍💻 . I also have training in Economic Sciences, which allows me to provide logic and problem solving in different environments.
+        <h2>Sobre Mi</h2>
+        <p>Soy <span>Full Stack Developer</span>con enfoque principal orientado al Back-end 👨‍💻. Cuento con un Background en
+          Ciencias Económicas, cual me ha permitido desarrollar soft skills como pensamiento lógico y resolución de
+          problemas aplicándolos en diferentes entornos de desarrollo.
         </p>
 
-        <p>I have agile knowledge of various technologies such as HTML, CSS, GIT/GITHUB, as well as frameworks
-          Front-end like REACT/Redux. My main focus is on the Back-End where
-          I have experience with technologies such as Node.js, Express.js, JavaScript, Redux, Redux Toolkit, PostgreSQL and
-          training me in TypeScript.</p>
-
-
+        <p>Cuento con sólidos conocimientos en diversas tecnologías como Html, Css, Git/Git hub, así como frameworks
+          Frontend como React/Redux. Mi enfoque principal se centra en el BackEnd donde tengo experiencia con
+          tecnologías como Typescript, Node.js, Express.js, SQL, Docker, MongoDb.
+        </p>
         <div>
           <div>
-            <h3>Personal Information</h3>
+            <h3>Información Personal</h3>
             <ul>
               <li>
-                <strong>Phone: </strong>
+                <strong>Telefono: </strong>
                 3435-330498
               </li>
               <li>
@@ -30,7 +30,7 @@ function SobreMi() {
                 kevinjeremiasbarrios@gmail.com
               </li>
               <li>
-                <strong>Location: </strong>
+                <strong>Ubicación: </strong>
                 Paraná, Entre Rios, Argentina.
               </li>
               <li>
@@ -43,7 +43,6 @@ function SobreMi() {
           <div>
             <button className={stylos.button}>  <a href={cv} download >Download CV <FontAwesomeIcon icon={faFile} /></a>
             </button>
-
           </div>
         </div>
       </div>

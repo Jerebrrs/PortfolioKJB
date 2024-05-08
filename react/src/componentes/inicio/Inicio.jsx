@@ -21,7 +21,7 @@ const Inicio = () => {
     const [nombre, setNombre] = useState('');
 
     useEffect(() => {
-        const nombreCompleto = 'Hi , I am Kevin Jeremias';
+        const nombreCompleto = 'Hola, soy Kevin Jeremias';
         let currentLength = 0;
 
         const interval = setInterval(() => {

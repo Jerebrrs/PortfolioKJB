@@ -14,7 +14,7 @@ function Proyectos() {
         <div className={stylos.container}>
             <div className={stylos.right} >
                 <div>
-                    <h2>Projects</h2>
+                    <h2>Proyectos</h2>
                     <div className={stylos.galeria}>
                         <div className={stylos.proyectskill}>
                             <div className={stylos.cardcontainer}>
@@ -23,10 +23,10 @@ function Proyectos() {
                                         <img src={piPoke} alt='piPoke' />
                                     </div>
                                     <div className={stylos.contentpika}>
-                                        <p className={stylos.heading}>Pi Pokemon</p>
-                                        <p>The project revolves around the world of Pokémon.
-                                            In it, you will find detailed information about different Pokémon, including their characteristics and abilities.
-                                            Best of all, you can also create your own Pokémon!
+                                        <p className={stylos.heading}>Pokedex</p>
+                                        <p>Mi objetivo fue crear una aplicación web. Ofreciendo a los usuarios la posibilidad de
+                                            explorar y seleccionar diferentes pokemones, así como poder ver el detalle y características.
+                                            Además, el usuario tiene la posibilidad de crear un Pokemon.
                                         </p>
                                     </div>
                                 </div>
@@ -56,7 +56,7 @@ function Proyectos() {
                             <div className={stylos.cardcontainer}>
                                 <div className={stylos.card}>
                                     <div className={stylos.frontcontent}>
-                                    <img src={portofolio} alt='portofolio' />
+                                        <img src={portofolio} alt='portofolio' />
 
                                     </div>
                                     <div className={stylos.contentport}>
@@ -74,8 +74,6 @@ function Proyectos() {
                                 <FontAwesomeIcon className={stylos.skills} icon={faReact} />
                                 <FontAwesomeIcon className={stylos.skills} icon={faHtml5} />
                                 <FontAwesomeIcon className={stylos.skills} icon={faCss3} />
-                                <img className={stylos.skills} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" />
-                                <FontAwesomeIcon className={stylos.skills} icon={faDatabase} />
                             </div>
                             <div className={stylos.skilldeploy}>
                                 <p>Deploy:</p>
@@ -97,9 +95,9 @@ function Proyectos() {
                                     </div>
                                     <div className={stylos.content}>
                                         <p className={stylos.heading}>Wearfashion</p>
-                                        <p>Wearfashion is an innovative E-commerce based on urban fashion.
-                                            Where it has an attractive landing, a product home with a filter panel.
-                                            Each product has a detail where you can choose size and quantity and add it to the cart.
+                                        <p>E-commerce de ropa urbana, experiencia explorar y seleccionar prendas. El mismo incluye un carrito de compras. Conectandose a una pasarela de pagos.
+                                            Cuenta con un Dashboard que gestiona clientes, contabilizar ordenes de compra, y agregar nuevos productos.
+                                            
                                         </p>
                                     </div>
                                 </div>
