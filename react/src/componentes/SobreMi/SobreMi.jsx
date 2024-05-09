@@ -8,10 +8,8 @@ function SobreMi() {
     <div className={stylos.container}>
       <div className={stylos.right}>
         <h2>Sobre Mi</h2>
-        <p>Soy <span>Full Stack Developer</span>con enfoque principal orientado al Back-end 👨‍💻. Cuento con un Background en
-          Ciencias Económicas, cual me ha permitido desarrollar soft skills como pensamiento lógico y resolución de
-          problemas aplicándolos en diferentes entornos de desarrollo.
-        </p>
+        <p>Soy <span>Full Stack Developer</span> 👨‍💻con Background en Ciencias Económicas, lo cual me ha permitido desarrollar soft skills
+como pensamiento lógico y resolución de problemas, aplicándolos en diferentes entornos de desarrollo.</p>
 
         <p>Cuento con sólidos conocimientos en diversas tecnologías como Html, Css, Git/Git hub, así como frameworks
           Frontend como React/Redux. Mi enfoque principal se centra en el BackEnd donde tengo experiencia con

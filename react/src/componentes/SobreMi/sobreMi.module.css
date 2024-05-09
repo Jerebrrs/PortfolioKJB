@@ -24,9 +24,16 @@
 }
 
 .container p span {
-    color: rgb(26, 70, 153);
+    /* color: rgb(26, 70, 153); */
     font-weight: bold;
-    filter: drop-shadow(1px 2px 3px #6c66b9);
+    /* filter: drop-shadow(1px 2px 3px #6c66b9); */
+    background-image: url('https://i.gifer.com/Hhm7.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+
+
 }
 
 .container h3 {
@@ -46,8 +53,15 @@
 
 .container ul li strong {
     display: flex;
-    color: rgb(117, 96, 233);
+ 
     width: 130px;
+   
+    /* filter: drop-shadow(1px 2px 3px #6c66b9); */
+    background-image: url('https://i.gifer.com/3a35.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
 }
 
 .container ul li span {
