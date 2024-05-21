@@ -54,7 +54,7 @@ function Contacto() {
     };
 
     return (
-        <div className={stylos.container}>
+        <div id='contacto' className={stylos.container}>
             <div className={stylos.right}>
                 <h2>Contacto</h2>
                 <div className={stylos.fila}>

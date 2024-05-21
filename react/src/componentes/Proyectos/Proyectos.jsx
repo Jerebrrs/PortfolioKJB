@@ -11,7 +11,7 @@ import { faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 function Proyectos() {
     return (
-        <div className={stylos.container}>
+        <div id='proyectos' className={stylos.container}>
             <div className={stylos.right} >
                 <div>
                     <h2>Proyectos</h2>
@@ -97,7 +97,7 @@ function Proyectos() {
                                         <p className={stylos.heading}>Wearfashion</p>
                                         <p>E-commerce de ropa urbana, experiencia explorar y seleccionar prendas. El mismo incluye un carrito de compras. Conectandose a una pasarela de pagos.
                                             Cuenta con un Dashboard que gestiona clientes, contabilizar ordenes de compra, y agregar nuevos productos.
-                                            
+
                                         </p>
                                     </div>
                                 </div>

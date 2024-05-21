@@ -1,231 +1,316 @@
- .inicioNuevo {
-     background-size: cover;
-     height: 100vh;
-     color: #f1f1f1;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     background-image: url('../Imagenes/pcFondo.jpg');
-     background-blend-mode: overlay;
-     line-height: 0;
- }
-
-
-
- .contenedor {
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
-
- .fotoPersonal {
-     padding: 20px;
-     background-color: #0b0d0e;
-
-
-     text-align: center;
-     border-radius: 40px;
- }
-
- .fotoPersonal img {
-     margin-top: 40px;
-     border: 7px solid #ffffff;
-
-     width: 80%;
-
-     border-radius: 100%;
- }
-
- .fotoPersonal img {
-     margin-top: 40px;
-     border: 2px solid #ffffff;
-     width: 80%;
-     border-radius: 100%;
- }
-
- .inicioNuevo h1 {
-     margin-top: 9px;
-     font-size: clamp(12px, 4vw, 32px);
-     font-family: 'Righteous';
-     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
-     filter: drop-shadow(0px 0px 0px #fff);
-
-     img {
-         width: 37px;
-         transition: all 5s;
-         /* filter: drop-shadow(8px 8px 4px #fff); */
-     }
- }
-
- .inicioNuevo h1::after {
-     content: '';
-
- }
-
- .inicioNuevo h1:hover::after {
-
-     box-shadow: 3px 5px 1px rgb(201, 3, 3);
- }
-
- .mainContainer {
-     width: 85px;
-     /* Ajusta el ancho máximo de la tarjeta */
-     height: 155px;
-     /* O ajusta la altura máxima según lo necesites */
-     padding: 75px;
-     align-items: center;
-     display: flex;
-     margin: auto;
-     margin-bottom: 2px;
-     position: relative;
-     flex-direction: column;
-     position: relative;
-     background: rgba(255, 255, 255, 0.6);
-     box-shadow: 0 8px 32px 0 rgba(18, 19, 34, 0.37);
-     backdrop-filter: blur(5px);
-     -webkit-backdrop-filter: blur(5px);
-     border-radius: 30px;
-     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-     border: 1px solid rgba(255, 255, 255, 0.822);
-     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-     /* Agregar box-shadow a la transición */
-     box-shadow: 1px 5px 7px rgba(0, 47, 255, 0.418);
- }
-
- .mainContainer:hover {
-     background-color: #4d5e839c;
-     box-shadow: 3px 3px 33px 10px rgb(0, 8, 3);
- }
-
- .inicioNuevo h2 {
-     margin-top: 80px;
-     font-size: 30px;
-     font-family: 'Righteous';
- }
-
- .redes a {
-     color: #ffffff;
-     display: inline-block;
-     text-decoration: none;
-     border: 1px solid #fff;
-     border-radius: 50%;
-     width: 42px;
-     height: 42px;
-     line-height: 42px;
-     margin: 40px 5px;
-     font-size: 20px;
-     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-     box-shadow: 1px 1px 1px rgba(71, 2, 2, 0.979);
- }
-
- .redes img {
-     width: 50px;
-     height: 50px;
- }
-
- .redes a:hover {
-     background-color: #fff;
-     box-shadow: 3px 3px 33px 10px rgb(0, 8, 3);
-     color: black;
-     border-radius: 1000%;
-     transition: all 1.5s;
- }
-
- .nombreTitulo {
-     text-align: center;
-     margin-top: -200px;
-     margin-left: 310px;
-     margin-right: auto;
-
- }
- .float{
-	position:fixed;
-	width:45px;
-	height:45px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+.inicioNuevo {
+    background-image: url('../Imagenes/pcFondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color, #fff);
+    min-height: 100vh;
+    padding: 0 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.fotoPersonal {
+    border-radius: 40px;
+    width: 40%;
+    height: auto;
+    align-items: center;
+}
+
+.fotoPersonal img {
+    margin-top: 40px;
+    border: 3px solid #ffffff;
+    width: 75%;
+    width: auto;
+    border-radius: 100%;
+}
+
+
+.inicioNuevo h1 {
+    margin-top: 9px;
+    font-size: clamp(12px, 4vw, 32px);
+    font-family: 'Righteous';
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+    filter: drop-shadow(0px 0px 0px #fff);
+
+    img {
+        width: 37px;
+        transition: all 5s;
+        /* filter: drop-shadow(8px 8px 4px #fff); */
+    }
+}
+
+.inicioNuevo h1::after {
+    content: '';
+
+}
+
+.inicioNuevo h1:hover::after {
+
+    box-shadow: 3px 5px 1px rgb(201, 3, 3);
+}
+
+.mainContainer {
+    width: 85px;
+    /* Ajusta el ancho máximo de la tarjeta */
+    height: 155px;
+    /* O ajusta la altura máxima según lo necesites */
+    padding: 75px;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    margin-bottom: 2px;
+    position: relative;
+    flex-direction: column;
+    position: relative;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(18, 19, 34, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.822);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Agregar box-shadow a la transición */
+    box-shadow: 1px 5px 7px rgba(0, 47, 255, 0.418);
+}
+
+.mainContainer:hover {
+    background-color: #4d5e839c;
+    box-shadow: 3px 3px 33px 10px rgb(0, 8, 3);
+}
+
+.inicioNuevo h2 {
+    margin-top: 80px;
+    font-size: 30px;
+    font-family: 'Righteous';
+}
+
+.redes a {
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 1px 1px 1px rgba(71, 2, 2, 0.979);
+}
+
+.redes img {
+    width: 50px;
+    height: 50px;
+}
+
+.redes a:hover {
+    background-color: #fff;
+    box-shadow: 3px 3px 33px 10px rgb(0, 8, 3);
+    color: black;
+    border-radius: 1000%;
+    transition: all 1.5s;
+}
+
+.nombreTitulo {
+    text-align: center;
+}
+
+.nombreTitulo h1 {
+    font-size: 2rem;
+    font-weight: 980;
+    margin: 15px 0;
+}
+
+.nombreTitulo h2 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.float {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
 .float:hover {
-	text-decoration: none;
-	color: #FFF;
-  background-color:#1ab152;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #1ab152;
 
     animation: shake 1s;
 
 
-  animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
-.my-float{
-	margin-top:16px;
+.my-float {
+    margin-top: 16px;
 }
 
-
- @media screen and (max-width: 992px) {
-     .nombreTitulo {
-         margin-left: 0;
-         margin-top: -150px;
-         /* Ajusta este valor según sea necesario */
-     }
- }
-
- /* For medium devices */
- @media screen and (max-width: 768px) {
-     .inicioNuevo {
-         background-size: contain;
-         /* Cambia el tamaño de fondo para adaptarse al tamaño de la pantalla */
-     }
-
-     .nombreTitulo {
-         margin-left: 0;
-         margin-top: -100px;
-         /* Ajusta este valor según sea necesario */
-     }
- }
-
- @media screen and (max-width: 576px) {
+@media(max-width:1370px) {
     .inicioNuevo {
-        background-size: contain;
-        color: #0b0d0e;
-        background-image: none;
-        display: flex;
-        flex-direction:column; /* Cambiar la dirección de los elementos a columna */
-        align-items: center; /* Centrar los elementos horizontalmente */
+        padding: 0 4%;
+    }
+
+
+
+    .contenedor {
+        padding-top: 130px;
+    }
+
+    .fotoPersonal {
+        height: 500px;
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:950px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        height: auto;
     }
 
     .nombreTitulo {
-        margin-left: 0;
-        margin-top: -650px; /* Ajusta este valor según sea necesario */
-        text-align: center; 
-        margin-left: -200px;/* Centrar el texto horizontalmente */
+        padding-top: 0px;
+    }
+
+    .fotoPersonal {
+        height: 420px;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .imagenFondo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 570px) {
+
+    .contenedor {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nombreTitulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nombreTitulo h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        width: 100%;
     }
 
     .nombreTitulo h2 {
+        width: 100%;
+        max-width: 550px;
+        font-size: 1.2rem;
+        line-height: 19px;
+        margin-bottom: 10px;
+    }
+
+    .fotoPersonal {
+        width: 100%;
         display: flex;
         justify-content: center;
     }
 
-    .fotoPersonal {
-        align-items: end; /* Centrar los elementos verticalmente */
-        margin-top: 50px;
-       
+    .fotoPersonal img {
+        height: 299px;
+        width: auto;
+        margin: 0 auto;
     }
- }
 
- /* For small devices */
- @media screen and (max-width: 350px) {
-     .nombreTitulo {
-         margin-left: 0;
-         margin-top: -20px;
-         /* Ajusta este valor según sea necesario */
-     }
- }
+}
+
+
+@media (max-width: 450px) {
+    .inicioNuevo {
+        padding: 0%;
+    }
+    .contenedor {
+        text-align: center;
+    }
+
+    .nombreTitulo h1 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .nombreTitulo h2 {
+        max-width: 500px;
+        font-size: 1.6rem;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .fotoPersonal img {
+        height: 50%;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .contenedor {
+        text-align: center;
+    }
+
+    .nombreTitulo h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .nombreTitulo h2 {
+        max-width: 280px;
+        font-size: 0.7rem;
+        line-height: 16px;
+        margin-bottom: 8px;
+    }
+
+    .fotoPersonal img {
+        max-width: 60%;
+        /* Ajustar el tamaño máximo de la imagen */
+        height: auto;
+    }
+}

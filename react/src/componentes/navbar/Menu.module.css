@@ -1,4 +1,4 @@
-.header {
+/* .header {
     z-index: 9;
     width: 100%;
     height: 10vh;
@@ -40,7 +40,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 30px;
-  
+
 }
 
 .nav a {
@@ -71,64 +71,185 @@
 }
 
 .showNav .nav {
-    display: flex; /* Mostrar la navegación cuando se activa la clase showNav */
-    flex-direction: column; /* Alinear los elementos en columna */
+    display: flex;
+    flex-direction: column;
+  
 }
 
-.responsive{
+.responsive {
     display: none;
 }
+
 .hide {
     display: none;
+} */
+
+.container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 11px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-end-end-radius: 50px;
+    transition: all 0.50s ease;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(to top, #000000c2, #0d0c0c);
 }
-@media screen and (max-width: 992px) {
-    .header {
+
+.imgLogo {
+    display: flexbox;
+    width: 60px;
+    transition: 1s;
+    filter: drop-shadow(4px 4px 4px #bcbdc0);
+    color: #000000;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+}
+
+.navlist a {
+    color: #fff;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    text-decoration: none;
+}
+
+.navlist a::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fdfdfd;
+    transition: width 0.6s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navlist a:hover::after {
+    width: 100%;
+    left: 0;
+    background-color: rgb(148, 148, 155);
+}
+
+.rigchcontent {
+    display: flex;
+    align-items: center;
+
+}
+
+.bxmenu {
+    font-size: 42px;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+
+@media(max-width: 1770px) {
+    .container {
+        padding: 22px 4%;
+    }
+}
+
+@media(max-width: 1150px) {
+    .container {
+        padding: 0 4%;
+    }
+}
+
+@media(max-width: 950px) {
+    .bxmenu {
         display: block;
     }
 
-    .nav {
-        display: none;
-    }
-
-    .showNav .nav {
+    .navlist {
+        position: absolute;
+        width: 100%;
+        height: 60vh;
+        padding: 100px 50px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        backdrop-filter: blur(32px);
+        transition: all .6s ease-in-out;
     }
 
-    .responsive {
-        justify-content: flex-end;
-    }
-    
-}
-
-/* For medium devices */
-@media screen and (max-width: 768px) {
-    .header {
+    .navlist a {
         display: block;
+        padding: 0;
+        margin: 0px 0px 25px 0px;
+        font-size: 1.7rem;
     }
 
-    .responsive {
-        justify-content: flex-end;
+    .navlist.open {
+        left: 0;
     }
 }
 
-@media screen and (max-width: 576px) {
-    .header {
-        display: block;
+@media(max-width: 450px) {
+    .container {
+        padding: 0 4%;
     }
-    .nav {
-        justify-content: center;
+
+    .navlist {
+        padding: 5px 25px;
+        /* Ajusta el relleno para que se vea bien en pantallas más pequeñas */
+    }
+
+    .navlist a {
+        margin: 10px 0;
+        /* Espaciado entre elementos de navegación */
+        font-size: 1.5rem;
+        /* Tamaño de fuente más pequeño */
+    }
+
+
+    .bxmenu {
+        display: block;
+        font-size: 100px;
+    }
+
+    .bxmenu svg {
+        display: block;
+        width: 33px;
+        height: auto;
     }
 }
 
-/* For small devices */
-@media screen and (max-width: 350px) {
-    .header {
-        display: block;
-    }
-    .nav {
-        justify-content: center;
+@media(max-width: 300px) {
+    .container {
+        padding: 4%;
     }
 
+    .navlist {
+        padding: 30px 15px;
+        /* Ajusta el  ñas */
+    }
+
+    .navlist a {
+        margin: 8px 0;
+        /* Espaciado entre elementos de navegación */
+        font-size: 1.3rem;
+        /* Tamaño de fuente aún más pequeño */
+    }
+
+
+    .bxmenu {
+        display: block;
+        /* Asegúrate de que el icono de menú esté visible */
+    }
 }

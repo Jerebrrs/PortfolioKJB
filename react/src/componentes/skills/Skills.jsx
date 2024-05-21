@@ -7,7 +7,7 @@ import { faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 function Skills() {
     return (
-        <div className={stylos.container}>
+        <div id='skills' className={stylos.container}>
             <div className={stylos.right}>
                 <h2>Skills</h2>
                 <div>

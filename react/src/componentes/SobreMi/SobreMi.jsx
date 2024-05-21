@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 function SobreMi() {
   return (
-    <div className={stylos.container}>
+    <div id='sobremi' className={stylos.container}>
       <div className={stylos.right}>
         <h2>Sobre Mi</h2>
         <p>Soy <span>Full Stack Developer</span> 👨‍💻con Background en Ciencias Económicas, lo cual me ha permitido desarrollar soft skills
