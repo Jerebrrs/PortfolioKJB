@@ -1,6 +1,6 @@
-import React from 'react'
+
 import stylos from './sobreMi.module.css';
-import cv from '../../assets/c.pdf'
+import cv from '../../assets/CvKB.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 function SobreMi() {

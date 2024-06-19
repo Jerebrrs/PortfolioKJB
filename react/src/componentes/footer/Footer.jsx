@@ -1,9 +1,9 @@
-import React from 'react'
+
 import stylos from './Footer.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesUp, faFile } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import cv from '../../assets/c.pdf'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import cv from '../../assets/CvKB.pdf'
 
 function Footer() {
     const handleScrollToTop = () => {
